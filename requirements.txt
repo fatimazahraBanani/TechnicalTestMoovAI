@@ -1,0 +1,5 @@
+forex_python
+pycountry
+numpy
+pandas
+beautifulsoup4
