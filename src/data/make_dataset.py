@@ -244,9 +244,9 @@ class MakeDataset:
 
 
         # check if compaign period is between 1-60 days
-        self.df['compaign_period'] = (self.df['deadline'] - self.df['launched']).dt.total_seconds()
-        self.df = self.df[self.df['compaign_period']<= (60*24*60*60)]
-        self.df['compaign_period'] = self.df['compaign_period']//86400
+        self.df['campaign_period'] = (self.df['deadline'] - self.df['launched']).dt.total_seconds()
+        self.df = self.df[self.df['campaign_period']<= (60*24*60*60)]
+        self.df['campaign_period'] = self.df['campaign_period']//86400
         
         # check if category and main_category columns are compatible
         self.df['category'] = self.df.apply(lambda x: x.category if x.category in main_sub_categories[x.main_category] else 

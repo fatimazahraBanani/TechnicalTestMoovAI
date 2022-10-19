@@ -3,3 +3,6 @@ pycountry
 numpy
 pandas
 beautifulsoup4
+seaborn
+plotly
+kaleido

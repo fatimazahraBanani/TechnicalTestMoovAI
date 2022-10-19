@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['src/data/make_dataset.py']
+recent_files = ['src/data/make_dataset.py', 'src/visualizations/visualize.py']
 
