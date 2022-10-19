@@ -107,7 +107,7 @@ class BuildFeatures:
     def save_features(self):
         # store clean dataframe into a csvFile
         csvPath = os.path.join(self.project_dir,"data","processed.csv")
-        self.df.to_csv(csvPath)
+        self.df.to_csv(csvPath,index=False)
         print("Feature Engineering is Done. You can find the csvFile in data/processed.csv")
         
         
