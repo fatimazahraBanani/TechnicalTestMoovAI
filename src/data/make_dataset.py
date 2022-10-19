@@ -282,7 +282,7 @@ class MakeDataset:
         # store clean dataframe into a csvFile
         csvPath = os.path.join(self.project_dir,"data","clean.csv")
         self.df.to_csv(csvPath)
-        print("Cleaning is Done. You can find the csvFile in data/clean.csv file")
+        print("Cleaning is Done. You can find the csvFile in data/clean.csv")
 
         return self.df
     
